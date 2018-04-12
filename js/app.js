@@ -36,8 +36,8 @@ function handleResponse(response){
 							'</div>' +
 							'<div class = "col-md-8">' +
 								'<div class = "pk-details">' +
-									'<p class = "name"><strong>Name: </strong>' + pokemon.name + '</p>' +
-									'<p class = "type"><strong>Club: </strong>' + pokemon.types[0].type.name + '</p>' +
+									'<p class = "name"><strong>Nombre: </strong>' + pokemon.name + '</p>' +
+									'<p class = "type"><strong>Tipo: </strong>' + pokemon.types[0].type.name + '</p>' +
 								'</div>' +
 							'</div>' +
 						'</div>' +

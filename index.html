@@ -3,27 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pokemon Exercise</title>
+	<link rel="icon" href="img/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href=“https://fonts.googleapis.com/css?family=Open+Sans” rel=“stylesheet”>
 	<script src="js/jquery-3.3.1.min.js"></script>
 </head>
 
 
-<body>
+<body class="bg-light">
 
 <div class="container">
 	
-	<h1>Pokémon Pokedex</h1>
-
-	<div class="row">  
+	<div class="row bgi">  
 	  <div class="col">
+	  	<h1 class="text-hide" style="background-image: url('img/cab_pokedex.jpg'); width: 100%; height: 135px;">Pokémon Pokedex</h1>
+	  	<h2>Pokémon Pokedex</h2>
 	    <div class="input-group">
-	      <input type="number" class="form-control" id="searchPk" placeholder="Busca aquí...">
+	      <input type="number" class="form-control-sm-12" id="searchPk" placeholder="Busca aquí...">
 	      <span class="input-group-btn">
-	        <button id="request" class="btn btn-secondary" type="button"onclick = "buscarPokemon()">Go!</button>
+	        <button id="request" class="btn btn-success" type="button"onclick = "buscarPokemon()">Go!</button>
 	      </span>
 	    </div>
 	  </div>
