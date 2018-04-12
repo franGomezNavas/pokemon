@@ -29,12 +29,16 @@ form.control {
     box-shadow: 0px 0px 3px #CCC;
 }
 
+.pk-details {
+        margin-left: 30px;
+}
+
 p.pk-details {
     margin-top: 1.6em;
 }
 
 .pk-card span {
-    margin-left: 0.5em;
+    margin-left: 60px;
 }
 
 img.pk-img {
