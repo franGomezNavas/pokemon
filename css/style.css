@@ -1,2 +1,36 @@
+body {
+    font-family: 'Open Sans';
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #DEDEDE;
+}
 
+
+
+
+
+/*.footballer-card {
+    background: #FFF;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px #CCC;
+}
+
+p.footballer-details {
+    margin-top: 1.6em;
+}
+
+.footballer-card span {
+    margin-left: 0.5em;
+}
+
+img.footballer-img {
+    width: 90px;
+    border: 3px solid #CCC;
+    border-radius: 100%;
+
+}
+*/
         
