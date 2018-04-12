@@ -5,15 +5,17 @@ $(document).ready(function() {
 var searchPk = $('#searchPk');
 var btn = $('#request');
 
-btn.on('click', function(){
-	console.log('funciono')
-})
+
 
 var main = $("#main");
 var pokemon;
 
 $.ajax({
+<<<<<<< HEAD
 	url: "http://pokeapi.co/api/v2/pokemon/5/",
+=======
+	url: "http://pokeapi.co/api/v2/pokemon/",
+>>>>>>> 22e8243c527448249b3c8b66af58401b233c9fa7
 	type: "GET",
 	dataType: "JSON",
 	success: handleResponse,
@@ -49,6 +51,7 @@ function handleResponse(response){
 
 
 function showPokemon(pokemon){
+<<<<<<< HEAD
 	console.log(pokemon.name)
 }
 
@@ -102,3 +105,26 @@ function showPokemon(pokemon){
 
 
 			
+=======
+	var i;
+	var pokemon20 = pokemon.results[i];
+	for(i = 0; i < pokemon.length; i++){
+	console.log(pokemon20.name);
+	}
+}
+
+btn.on('click', function(){
+	console.log('funciono');
+	alert(searchPk.val());
+})
+
+//EVENTO
+
+
+
+// searchPk.keypress(function( event ) {
+//   if ( event.which == 13 ) {
+//      alert(searchPk.val());
+//   }
+// })
+>>>>>>> 22e8243c527448249b3c8b66af58401b233c9fa7
