@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 $.get({
 	url: 'https://pokeapi.co/api/v2/pokemon/1',
 	type: 'GET',
@@ -61,3 +62,22 @@ $.get({
 // 			} 
 // 		}) 
 // })	
+=======
+var main = $("#main");
+var pokemon;
+
+$.ajax({
+	url: "http://pokeapi.co/api/v2/pokemon/1",
+	type: "GET",
+	dataType: "JSON",
+	success: handleResponse
+})
+function handleResponse(response){
+	pokemon = response;
+	showPokemon(pokemon)
+}
+
+function showPokemon(pokemon){
+	alert(pokemon.name)
+}
+>>>>>>> 6bd6629375c220f2fc27aff10437474c06891551
