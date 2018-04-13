@@ -8,10 +8,10 @@ function buscarPokemon() {
 var pokeUrl = "https://pokeapi.co/api/v2/pokemon/1/";
 
 $(document).ready(function() {})
-	function getPokemon(pokeUrl) {
+
+function getPokemon(pokeUrl) {
 		// body...
 	
-
 var searchPk = $('#searchPk');
 var btn = $('#request');
 
@@ -45,14 +45,14 @@ function handleResponse(response){
 
 	main.append(listItem);
 	showPokemon(pokemon)
-}
+} // finaliza handleResponse(response)
 
 
 function showPokemon(pokemon){
 	console.log(pokemon.name)
 }
 
-} // finaliza el document.ready(function())
+} // finaliza function getPokemon(pokeUrl))
 
 
 
