@@ -19,46 +19,45 @@
 	
 	<div class="row">  
 	  <div class="col">
+
 	  	<h1 class="text-hide" style="background-image: url('img/cab_pokedex.jpg'); width: 100%; height: 135px;">Pokémon Pokedex</h1>
 	  	<h2>Pokémon Pokedex</h2>
+
 	    <div class="input-group">
 	      <input type="text" class="form-control-sm-12" id="searchPk" placeholder="Busca aquí...">
 	      <span class="input-group-btn">
 	        <button id="request" class="btn btn-success" type="button"onclick = "buscarPokemon()">Go!</button>
 	      </span>
+
 	    </div>
 
-<!-- aqui empieza la busqueda por tipo -->
+<!-- aqui empieza la 2º version la busqueda por tipo -->
 
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Search Pokemon by type
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Normal</a>
-    <a class="dropdown-item" href="#">Fighting</a>
-    <a class="dropdown-item" href="#">Flying</a>
-    <a class="dropdown-item" href="#">Ground</a>
-    <a class="dropdown-item" href="#">Rock</a>
-    <a class="dropdown-item" href="#">Bug</a>
-    <a class="dropdown-item" href="#">Gost</a>
-    <a class="dropdown-item" href="#">Steel</a>
-    <a class="dropdown-item" href="#">Fire</a>
-    <a class="dropdown-item" href="#">Water</a>
-    <a class="dropdown-item" href="#">Grass</a>
-    <a class="dropdown-item" href="#">Electric</a>
-    <a class="dropdown-item" href="#">Psychic</a>
-    <a class="dropdown-item" href="#">Ice</a>
-    <a class="dropdown-item" href="#">Dragon</a>
-    <a class="dropdown-item" href="#">Dark</a>
-    <a class="dropdown-item" href="#">Fairy</a>
-    <a class="dropdown-item" href="#">Shadow</a>
-    <a class="dropdown-item" href="#">Unkonw</a>
+<select class="custom-select">
+  <option selected>Search Pokemon by Type</option>
+  <option value="1">Normal</option>
+  <option value="2">Fighting</option>
+  <option value="3">Flying</option>
+  <option value="4">Ground</option>
+  <option value="5">Rock</option>
+  <option value="6">Bug</option>
+  <option value="7">Ghost</option>
+  <option value="8">Steel</option>
+  <option value="9">Fire</option>
+  <option value="10">Water</option>
+  <option value="11">Grass</option>
+  <option value="12">Electric</option>
+  <option value="13">Psychic</option>
+  <option value="14">Ice</option>
+  <option value="15">Dragon</option>
+  <option value="16">Dark</option>
+  <option value="17">Fairy</option>
+  <option value="18">Shadow</option>
+  <option value="19">Unkonw</option>
+  <option value="20">Poison</option>
+</select>
 
-  </div>
-</div>
-
-<!-- aqui termina la busqueda por tipo -->
+<!-- aqui termina la 2º version la busqueda por tipo -->
 
 	  </div>
 	</div>
