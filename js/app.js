@@ -13,8 +13,8 @@ function buscarPokemonType() {
 	var value = $(".form-control").val();
 	console.log('input')
 	console.log(value)
-	pokeUrl = 'https://pokeapi.co/api/v2/type/' + value + '/';
-	getPokemon(pokeUrl);
+	pokeUrlType = 'https://pokeapi.co/api/v2/type/' + value + '/';
+	getPokemonType(pokeUrlType);
 
 }
 
@@ -22,6 +22,9 @@ function buscarPokemonType() {
 
 
 var pokeUrl = "https://pokeapi.co/api/v2/pokemon/1/";
+var pokeUrlType = "https://pokeapi.co/api/v2/type/1/";
+
+
 
 $(document).ready(function() {})
 
@@ -73,11 +76,55 @@ function showPokemon(pokemon){
 
 
 
+// =======  DUPLICADO  PIRATA  ============== //
 
 
 
+function getPokemonType(pokeUrlType) {
+		// tipos de pokemon
+
+var searchPkType = $("form-control");
+var inputType = $('');
+var btnType = $('searchPkType');
+
+var main = $("#main");
+var pokemon;
+
+$.ajax({
+	url: pokeUrlType,
+	type: "GET",
+	dataType: "JSON",
+	success: handleResponse,
+})
+
+function handleResponse(response){
+	pokemon = response;
+
+	var listItem = 
+					'<div class = "pk-card">' + 
+						'<div class = "row">' +
+							'<div class = "col-md-3">' +
+								// '<img src = "' + pokemon.sprites.front_default + '" class = "pk-img">' +
+							'</div>' +
+							'<div class = "col-md-8">' +
+								'<div class = "pk-details">' +
+									'<p class = "name"><strong>Nombre: </strong>' + pokemon.pokemon.name + '</p>' +
+									// '<p class = "type"><strong>Tipo: </strong>' + type.types[0].type.name + '</p>' +
+								'</div>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+
+	main.append(listItem);
+	showPokemon(pokemon)
+} // finaliza handleResponse(response)
 
 
+function showPokemon(pokemon){
+	console.log(pokemon.name)
+}
+
+}
 
 
 
