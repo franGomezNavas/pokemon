@@ -1,9 +1,25 @@
+//buscar pokemon general
+
 function buscarPokemon() {
 	var input = $("#searchPk").val();
 	pokeUrl = 'https://pokeapi.co/api/v2/pokemon/' + input + '/';
 	getPokemon(pokeUrl);
 
 }
+
+// buscar pokemon por tipo
+
+function buscarPokemonType() {
+	var value = $(".form-control").val();
+	console.log('input')
+	console.log(value)
+	pokeUrl = 'https://pokeapi.co/api/v2/type/' + value + '/';
+	getPokemon(pokeUrl);
+
+}
+
+// termina buscar pokemon por tipo
+
 
 var pokeUrl = "https://pokeapi.co/api/v2/pokemon/1/";
 
@@ -13,6 +29,7 @@ function getPokemon(pokeUrl) {
 		// body...
 	
 var searchPk = $('#searchPk');
+var inputType = $('')
 var btn = $('#request');
 
 var main = $("#main");
