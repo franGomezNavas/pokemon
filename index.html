@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -26,7 +26,7 @@
 	    <div class="input-group">
 	      <input type="text" class="form-control-sm-12" id="searchPk" placeholder="Busca aquí...">
 	      <span class="input-group-btn">
-	        <button id="request" class="btn btn-success" type="button" onclick = "buscarPokemon()">Go!</button>
+	        <button id="btn-search" class="btn btn-success" type="button" onclick = "buscarPokemon()">Go!</button>
 	      </span>
 
 	    </div>
@@ -35,31 +35,29 @@
 
 <form class="form-inline">
 
-	<select class="form-control" >
+	<select class="form-control" id="dropdown-menu">
 	  <option selected>Search Pokemon by Type</option>
-	  <option value="1">Normal</option>
-	  <option value="2">Fighting</option>
-	  <option value="3">Flying</option>
-	  <option value="4">Ground</option>
-	  <option value="5">Rock</option>
-	  <option value="6">Bug</option>
-	  <option value="7">Ghost</option>
-	  <option value="8">Steel</option>
-	  <option value="9">Fire</option>
-	  <option value="10">Water</option>
-	  <option value="11">Grass</option>
-	  <option value="12">Electric</option>
-	  <option value="13">Psychic</option>
-	  <option value="14">Ice</option>
-	  <option value="15">Dragon</option>
-	  <option value="16">Dark</option>
-	  <option value="17">Fairy</option>
-	  <option value="18">Shadow</option>
-	  <option value="19">Unkonw</option>
-	  <option value="20">Poison</option>
+	  <option value="1">normal</option>
+	  <option value="2">fighting</option>
+	  <option value="3">flying</option>
+	  <option value="4">poison</option>
+	  <option value="5">ground</option>
+	  <option value="6">rock</option>
+	  <option value="7">bug</option>
+	  <option value="8">ghost</option>
+	  <option value="9">steel</option>
+	  <option value="10">fire</option>
+	  <option value="11">water</option>
+	  <option value="12">grass</option>
+	  <option value="13">electric</option>
+	  <option value="14">pyshic</option>
+	  <option value="15">ice</option>
+	  <option value="16">dragon</option>
+	  <option value="17">dark</option>
+	  <option value="18">fairy</option>
 	</select>
 
-		<button type="button" class="btn btn-primary" id = "searchPkType" onclick = "buscarPokemonType()">Submit</button>
+		<button type="button" class="btn btn-primary" id = "btn-searchType" onclick = "buscarPokemonType()">Submit</button>
 
 		<button type="submit" class="btn btn-danger">Borrar todo</button>
 </form>
@@ -78,7 +76,6 @@
 	</div>
 </div>
 
-	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/app.js"></script>
